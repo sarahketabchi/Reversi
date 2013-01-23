@@ -17,6 +17,7 @@ class Board
 
   def get_opposite_color(color)
     op_color = :W ? color == :B : op_color = :B
+    # NR: you want to use ==, not =
     op_color
   end
 
