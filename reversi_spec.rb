@@ -31,6 +31,7 @@ describe Board do
     it "should be able to place a piece adjacent to a piece of it's oppoenent" do
       board.show_board
       board.valid_move?([2, 3, :W]).should == true
+      # you can use .should be_true instead of the == true
     end
 
     it "should not be able to place a piece with no opponent pieces adjacent" do
